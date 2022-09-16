@@ -1,0 +1,34 @@
+
+.article-rent {
+  & img {
+    margin-right: 17px;
+  }
+}
+.article-rent__article {
+}
+.article-rent__title {
+}
+
+.article-rent__text {
+  margin-bottom: 30px;
+}
+.article-rent__list,
+.article-advantages__list  {
+  padding-left: 20px;
+  margin-bottom: 30px;
+  list-style: disc;
+}
+.article-advantages {
+}
+.article-advantages__title {
+}
+.article-advantages__text {
+}
+
+.article-more .blog__list {
+  display: flex;
+  overflow: hidden;
+  & li {
+    min-width: 370px;
+  }
+}

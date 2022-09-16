@@ -1,0 +1,23 @@
+.services {
+  margin-bottom: 230px;
+}
+.services__title {
+  margin-bottom: 60px;
+}
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 369px);
+  gap: 30px;
+}
+.services__item {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: $yellow;
+}
+.services__img {
+}
+.services__text {
+  padding: 0 20px;
+}

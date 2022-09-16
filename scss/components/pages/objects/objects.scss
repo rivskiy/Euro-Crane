@@ -1,0 +1,37 @@
+
+.objects {
+  margin-bottom: 100px;
+}
+.objects__title {
+  font-size: 44px;
+}
+
+.objects__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.objects__item {
+}
+.objects__description {
+  padding: 0 20px;
+}
+.objects__btn{
+  display: flex;
+  margin: 0 auto;
+  color: $black;
+  background: transparent;
+  border: 1px solid $yellow;
+}
+
+.page-nav {
+  font-size: 12px;
+  font-weight: 500;
+  & a:last-child {
+    color: #898989;
+  }
+}

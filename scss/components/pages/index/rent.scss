@@ -1,0 +1,32 @@
+.rent {
+  margin-bottom: 130px;
+}
+.rent__article {
+  margin-bottom: 60px;
+  & p {
+    margin-bottom: 30px;
+  }
+}
+.rent__title {
+}
+.rent__text {
+}
+.rent__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.rent__item {
+  position: relative;
+  padding-left: 20px;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: $yellow;
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,67 @@
+
+
+
+@import "_font";
+@import "_var";
+@import "_global";
+@import "./components/base/ui.scss";
+
+
+/*                INDEX              */
+/*                INDEX              */
+/*                INDEX              */
+
+/*                HEADER              */
+@import "./components/base/header.scss";
+/*                OFFER              */
+@import "./components/pages/index/offer.scss";
+/*                TEXHNIC              */
+@import "./components/pages/index/technic.scss";
+/*                ADVANTAGES              */
+@import "./components/pages/index/advantages.scss";
+/*                PROJECTS              */
+@import "./components/pages/index/projects.scss";
+/*                CATALOG              */
+@import "./components/pages/index/catalog.scss";
+/*                COST             */
+@import "./components/pages/index/cost.scss";
+/*                CALL              */
+@import "./components/pages/index/call.scss";
+/*                ABOUT              */
+@import "./components/pages/index/about.scss";
+/*                 SERVICES            */
+@import "./components/pages/index/services.scss";
+/*                RENT              */
+@import "./components/pages/index/rent.scss";
+/*                ORDER              */
+@import "./components/pages/index/order.scss";
+/*                FOOTER              */
+@import "./components/base/footer.scss";
+/*                HEADER              */
+
+/*                COMPANY              */
+/*                COMPANY              */
+/*                COMPANY              */
+
+@import "./components/pages/company/company.scss";
+/*        COMPANY-CONTACTS              */
+@import "./components/pages/company/company-contacts.scss";
+
+/*                OBJECTS              */
+/*                OBJECTS              */
+/*                OBJECTS              */
+
+@import "./components/pages/objects/objects.scss";
+
+/*                BLOG              */
+/*                BLOG              */
+/*                BLOG              */
+
+@import "./components/pages/blog/blog.scss";
+/*                BLOG-PAGE              */
+@import "./components/pages/blog/blog-page.scss";
+
+/*                CONTACTS              */
+/*                CONTACTS              */
+/*                CONTACTS              */
+@import "./components/pages/contacts/contacts.scss";

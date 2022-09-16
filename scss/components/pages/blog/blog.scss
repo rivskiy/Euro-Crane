@@ -1,0 +1,33 @@
+.blog {
+  margin-bottom: 100px;
+}
+.blog__title {
+}
+.blog__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.blog__item {
+}
+.blog-card {
+}
+.blog-card__container {
+  padding: 0 30px;
+}
+.blog-card__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.blog-card__description {
+  margin-bottom: 20px;
+}
+.blog-card__btn {
+  width: 200px;
+  height: 45px;
+}
+.blog__btn {
+  display: flex;
+  margin: 0 auto;
+}

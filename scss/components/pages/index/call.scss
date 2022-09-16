@@ -1,0 +1,78 @@
+.call {
+  margin-bottom: 160px;
+  background: {
+    image: url(../img/svg/call-bg.svg);
+    repeat: no-repeat;
+    position-x: right;
+  }
+  border-top: 30px solid #FCD127;
+  border-bottom: 30px solid #FCD127;
+}
+
+.call__title {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  font-size: 33px;
+  & span{
+    color: $yellow;
+  }
+}
+.call__form {
+  & input,
+  & button {
+    width: 300px;
+    height: 50px;
+    margin-right: 30px;
+    padding-left: 15px;
+  }
+  & .call__check input {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+}
+.call__check {
+  position: relative;
+  display: block;
+  max-width: 420px;
+  padding-left: 30px;
+  margin-bottom: 35px;
+  font-family: $font-rob;
+  font-weight: 300;
+  font-size: 11px;
+  & .main-check__box {
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+}
+
+.main-check {
+  appearance: none;
+}
+
+.main-check__box {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+
+  border: 1px solid $black-light;
+  border-radius: 2px;
+}
+
+.main-check:checked + .main-check__box {
+  background: {
+    image: url(../img/svg/check.svg);
+    repeat: no-repeat;
+    position: center;
+  }
+}
+
+.main-check:focus + .main-check__box {
+  border: 1px solid $orange;
+}
+
+.call__btn {
+}
+.btn {
+}

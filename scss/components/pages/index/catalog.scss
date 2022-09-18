@@ -63,3 +63,25 @@
   display: flex;
   margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .catalog__title {
+    margin-bottom: 100px;
+  }
+  .catalog__control {
+    display: none;
+  }
+  .catalog__list {
+    width: max-content;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+}

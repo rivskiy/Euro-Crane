@@ -61,3 +61,17 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .cost__list {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 570px) {
+  .cost__list {
+    grid-template-columns: 1fr;
+    margin: 0 25px;
+  }
+}

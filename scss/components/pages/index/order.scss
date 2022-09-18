@@ -85,3 +85,19 @@
   width: 100%;
   margin-bottom: 70px;
 }
+
+@media (max-width: 1024px) {
+  .order {
+    background-position-x: 300px;
+  }
+}
+
+@media (max-width: 570px) {
+  .order {
+    background-image: none;
+  }
+  .order__form {
+    width: 290px;
+    margin: 0 auto;
+  }
+}

@@ -28,7 +28,9 @@
 }
 
 .header__phone {
-  width: 145px;
+  display: flex;
+  flex-direction: column;
+
   font-size: $fz-text;
 }
 
@@ -36,11 +38,12 @@
 .header__adress,
 .header__phone {
   position: relative;
+  padding-left: 30px;
   &::after {
     content: "";
     position: absolute;
     top: 50%;
-    left: -30px;
+    left: -0;
     width: 25px;
     height: 25px;
     transform: translateY(-50%);
@@ -65,6 +68,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header__menu-btn,
+.header__menu-overlay {
+  display: none;
 }
 .header__nav {
 }
@@ -110,3 +117,123 @@
     border: none;
   }
 }
+
+@media (max-width: 1170px) {
+  .header__btn {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__list {
+    gap: 15px;
+  }
+  .header__search {
+    & input {
+      width: 200px;
+    }
+  }
+}
+
+
+@media (max-width: 860px) {
+  .header__time {
+    display: none;
+  }
+  .header__search {
+    & input {
+      width: 270px;
+    }
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__menu-btn {
+    position: relative;
+
+    display: block;
+    width: 60px;
+    height: 40px;
+    &::before,
+    &::after,
+    & span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+
+      background-color: $black;
+      border-radius: 2px;
+      transition: all 0.3s ease 0s;
+    }
+    &::before,
+    &::after {
+      content: "";
+    }
+    &::before {
+      top: 0;
+    }
+    & span {
+      top: 50%;
+      transform: scale(1) translateY(-50%);
+    }
+    &::after {
+      top: 100%;
+    }
+  }
+  .header__menu-btn.--active {
+    &::before {
+      top: 50%;
+      transform: rotate(45deg);
+    }
+    & span {
+      transform: scale(0) translateY(-50%);
+    }
+    &::after {
+      top: 50%;
+      transform: rotate(-45deg);
+    }
+  }
+  .header__search {
+    margin: 22px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__top-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .header__text {
+    margin-left: 30px;
+    margin-right: auto;
+  }
+
+  .header__adress {
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
+  .header__top-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
+
+  .header__phone {
+    grid-column: 1/3;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header__search {
+    & input {
+      width: 130px;
+    }
+  }
+}
+

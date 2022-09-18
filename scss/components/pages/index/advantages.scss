@@ -92,3 +92,66 @@
     -webkit-text-stroke: 1px #FFFFFF;
   }
 }
+
+@media (max-width: 1024px) {
+  .advantages-wrapper {
+    column-gap: 40px;
+  }
+}
+
+@media (max-width: 860px) {
+  .advantages-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .advantages__list {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    grid-row: 2/3;
+  }
+  .advantages__btn {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .advantages__statistic {
+    column-gap: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages__statistic {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 170px;
+  }
+  .advantages__statistic-item {
+    margin: 0;
+    margin-bottom: 100px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    &:first-child {
+      margin-top: 100px;
+    }
+    & span{
+      display: block;
+      margin-bottom: 30px;
+      font-family: $font-PT;
+      font-size: 70px;
+      color: $black;
+      -webkit-text-stroke: 1px #FFFFFF;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .advantages__list {
+    grid-template-columns: 1fr;
+  }
+}

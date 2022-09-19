@@ -1,12 +1,17 @@
 .company {
-  position: relative;
   margin-bottom: 150px;
+  max-width: 1400px;
+  padding-left: 15px;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 790px;
+  column-gap: 40px;
 }
 .company__title {
 
 }
 .company__text-container {
-  max-width: 540px;
+  grid-column: 1/2;
 }
 .company__text {
   margin-bottom: 30px;
@@ -17,9 +22,7 @@
 }
 
 .company__img {
-  position: absolute;
-  bottom: 0;
-  right: -215px;
+
 }
 
 .reviews{
@@ -44,4 +47,21 @@
   font-size: 28px;
   font-weight: 700;
 }
+}
+
+@media (max-width: 1170px) {
+  .company {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .company {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+  .company__img {
+    margin: 0 auto;
+    grid-row: 2/3;
+  }
 }

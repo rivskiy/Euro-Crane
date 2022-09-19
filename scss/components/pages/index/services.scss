@@ -4,11 +4,7 @@
 .services__title {
   margin-bottom: 60px;
 }
-.services__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
+
 .services__item {
   font-size: 18px;
   font-weight: 700;
@@ -22,16 +18,4 @@
 
 .services__text {
   padding: 0 20px;
-}
-
-@media (max-width: 860px) {
-  .services__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 570px) {
-  .services__list {
-    grid-template-columns: 1fr;
-  }
 }

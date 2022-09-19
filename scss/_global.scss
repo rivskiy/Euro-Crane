@@ -75,3 +75,24 @@ button {
   line-height: 1.4em;
 }
 
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  & img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 860px) {
+  .grid-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 570px) {
+  .grid-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -7,9 +7,6 @@
 }
 
 .objects__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 700;
@@ -34,4 +31,8 @@
   & a:last-child {
     color: #898989;
   }
+}
+
+@media (max-width: 860px) {
+
 }

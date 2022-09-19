@@ -4,15 +4,12 @@
 .blog__title {
 }
 .blog__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
   margin-bottom: 30px;
 }
-.blog__item {
-}
+
 .blog-card {
 }
+
 .blog-card__container {
   padding: 0 30px;
 }

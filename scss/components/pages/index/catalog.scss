@@ -20,6 +20,8 @@
   min-width: 370px;
 }
 .card__img {
+  display: block;
+  margin: 0 auto;
 }
 
 .card__container{
@@ -73,6 +75,9 @@
 }
 
 @media (max-width: 425px) {
+  .card {
+    min-width: auto;
+  }
   .catalog__title {
     margin-bottom: 100px;
   }

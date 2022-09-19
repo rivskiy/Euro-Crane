@@ -1,0 +1,30 @@
+
+.contacts__text {
+  grid-row: 2/3;
+}
+.contacts__content.--company {
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  align-self: start;
+}
+
+@media (max-width: 860px) {
+  .contacts__text {
+    grid-column: 1/-1;
+  }
+  .contacts__content.--company {
+    align-self: start;
+    grid-template-columns: 1fr;
+    & p {
+      grid-column: 1/2;
+    }
+  }
+  .contacts__phone.--company {
+    grid-row: 5/6;
+  }
+  .contacts__form.--company {
+    grid-row: 3/4;
+  }
+}
+

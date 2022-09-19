@@ -74,7 +74,8 @@
       <a href="index.html">Главная -</a>
       <a href="#">О компании</a>
     </div>
-    <section class="company container">
+
+    <section class="company">
       <h1 class="company__title title">О Компании Еврокран</h1>
       <div class="company__text-container">
         <p class="company__text">Компания ЕвроКран – это команда специалистов, обеспечивающих эффективное использование
@@ -91,17 +92,18 @@
           <li>установка рекламных щитов;</li>
           <li>перевозка автотрейлерами крупногабаритных и тяжеловесных грузов.</li>
         </ul>
-        <picture class="company__img">
-          <source media="(max-width: 320px)" srcset="img/company/company-mob.webp">
-          <img src="img/company/company-desctope.webp" alt="Кран" width="788" height="542">
-        </picture>
       </div>
+      <picture class="company__img">
+        <source media="(max-width: 320px)" srcset="img/company/company-mob.webp">
+        <source media="(max-width: 768px)" srcset="img/company/company-tablet.webp">
+        <img src="img/company/company-desctope.webp" alt="Кран" width="788" height="542">
+      </picture>
     </section>
 
     <!--                                     SERVICES           -->
     <section class="services container">
       <h2 class="services__title title">Услуги</h2>
-      <ul class="services__list">
+      <ul class="services__list grid-list">
         <li class="services__item">
           <a href="#">
             <picture>
@@ -221,6 +223,48 @@
           </li>
         </ul>
       </div>
+    </section>
+    <section class="contacts container">
+      <h1 class="contacts__title title">Контакты</h1>
+      <div class="contacts__text">
+      <p>Ежедневно мы развиваемся и стараемся стать лучше для вас, поэтому всегда рады получить от вас обратную связь с пожеланиями и идеями по улучшению наших продуктов!</p>
+      <p>Если у вас остались вопросы или есть предложения как стать лучше пишите нам!</p>
+    </div>
+      <div class="contacts__content --company">
+        <p class="contacts__adress contacts__item">г. Москва, Россия, 117628,м. Бульвар Дмитрия Донского, ул. Куликовская, 12</p>
+        <p class="contacts__phone --company  contacts__item">
+          <a href="tel:+74999299666">+7 (499)929-96-66</a>
+          <a href="tel:+79853645518">+7 (985)364-55-18</a>
+          <a href="tel:+79852262030">+7 (985)226-20-30</a>
+        </p>
+        <p class="contacts__email contacts__item"><a href="mailto:evro-k@yandex.ru">evro-k@yandex.ru</a></p>
+        <p class="contacts__time contacts__item">10:00 - 17:00</p>
+      </div>
+      <form class="contacts__form --company  contact-form" action="#">
+        <label>
+          <span class="visually-hidden">Ваше имя</span>
+          <input class="contact-form__name" type="text" name="name" placeholder="Имя">
+        </label>
+        <div class="contact-form__container">
+          <label>
+            <span class="visually-hidden">Ваша почта</span>
+            <input class="contact-form__mail" type="email" name="email" placeholder="E-mail">
+          </label>
+          <label>
+            <span class="visually-hidden">Ваш телефон</span>
+            <input class="contact-form__phone" type="tel" name="phone" placeholder="Телефон">
+          </label>
+        </div>
+        <label>
+          <span class="visually-hidden">Оставьте ваш вопрос</span>
+          <textarea class="contact-form__text" cols="30" rows="4" placeholder="Сообщение"></textarea>
+        </label>
+        <label class="contact-form__check">
+          <input class="main-check" type="checkbox" checked>
+          <span class="main-check__box"></span>Я согласен с условиями обработки и использования моих персональных данных
+        </label>
+        <button class="contact-form__btn btn" type="submit">Оставить заявку</button>
+      </form>
     </section>
     <img src="img/map.png" alt="">
   </main>

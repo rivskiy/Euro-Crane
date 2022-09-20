@@ -2,8 +2,13 @@
   position: relative;
   max-width: 100%;
   overflow: hidden;
-  display: flex;
 }
+
+.offer__slider {
+    display: flex;
+    transition: all 0.3s ease;
+}
+
 .offer__container {
   position: relative;
   height: 600px;
@@ -53,8 +58,6 @@
   left: 50%;
 
   transform: translateX(-50%);
-}
-.slider__btn{
   display: flex;
   & button{
     width: 66px;
@@ -66,11 +69,15 @@
       position: center;
     }
   }
-  & button.no-active{
+  & button:disabled{
     background-color: $gray;
   }
 }
-.slider__btn-next{
+.slider__btn{
+
+}
+
+.offer__slider-btn--next{
   transform: rotateY(180deg);
 }
 

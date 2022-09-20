@@ -27,14 +27,13 @@
 
 .reviews{
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 .reviews__control {
 }
 .reviews__list {
-  display: flex;
-  column-gap: 30px;
-  overflow: hidden;
+
 }
 .reviews__item {
   min-width: fit-content;
@@ -64,4 +63,9 @@
     margin: 0 auto;
     grid-row: 2/3;
   }
+}
+@media (max-width: 570px) {
+.reviews__control {
+  display: none;
+}
 }

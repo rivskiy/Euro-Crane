@@ -70,12 +70,76 @@ button {
   padding: 0 15px;
   margin: 0 auto;
 }
+.btn{
+  display: inline-flex;
+  width: 220px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+
+  background-color: $yellow;
+  &:hover,
+  &:active{
+    background-color: $orange;
+  }
+}
+
+.btn--transparent {
+  color: $black;
+  background-color: transparent;
+  border: 1px solid $yellow;
+}
+
+.slider-control{
+  width: 120px;
+  margin-left: auto;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  & button{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $yellow;
+    background-color: transparent;
+    &:disabled {
+      border: none;
+      background-color: transparent;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -50%;
+      width: 30px;
+      height: 8px;
+      background: {
+        image: url(../img/svg/arrow-long.svg);
+        repeat: no-repeat;
+      }
+      transform: translateY(-50%);
+    }
+  }
+  & button.btn-prew::after{
+    left: 75%;
+    transform: rotateY(180deg) translateY(-50%);
+  }
+}
 
 .title{
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: $fz-title;
   line-height: 1.4em;
+}
+
+.slider {
+  transition: all 0.3s ease;
 }
 
 .grid-list {
@@ -90,24 +154,11 @@ button {
 .flex-list {
   display: flex;
   gap: 30px;
-  overflow: hidden;
 }
 
 @media (max-width: 860px) {
   .grid-list {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .flex-list__item {
-    display: none;
-    &:first-child {
-      display: block;
-    }
-    &:nth-child(2) {
-      display: block;
-    }
   }
 }
 

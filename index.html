@@ -74,43 +74,51 @@
 
     <!--                                          OFFER            -->
 
-    <section class="offer slider">
-      <div class="offer__container slider__item">
-        <div class="offer__overlay">
-          <div class="offer__content">
-            <h2 class="offer__title">Аренда спецтехники<br> Liebherr для любых задач</h2>
-            <p class="offer__text">Мобильные, гусеничные и башенные краны<br> LIEBHERR в аренду для любых задач и
-              грузов.<br>
-              работаем по всей России
-            </p>
-            <a class="offer__btn btn" href="#">Заказать звонок</a>
-            <a class="offer__btn btn btn--transparent" href="#">Каталог техники</a>
+    <section class="offer">
+      <ul class="offer__slider">
+        <li class="offer__container offer__slider__item">
+          <div class="offer__overlay">
+            <div class="offer__content">
+              <h2 class="offer__title">Аренда спецтехники<br> Liebherr для любых задач</h2>
+              <p class="offer__text">Мобильные, гусеничные и башенные краны<br> LIEBHERR в аренду для любых задач и
+                грузов.<br>
+                работаем по всей России
+              </p>
+              <a class="offer__btn btn" href="#">Заказать звонок</a>
+              <a class="offer__btn btn btn--transparent" href="#">Каталог техники</a>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="offer__container slider__item">
-        <div class="offer__content">
-          <h2 class="offer__title">Аренда спецтехники<br> Liebherr для любых задач</h2>
-          <p class="offer__text">gdgdgdd
-          </p>
-          <a class="offer__btn btn" href="#call">Заказать звонок</a>
-          <a class="offer__btn btn" href="#">Каталог техники</a>
-        </div>
-      </div>
-      <div class="offer__container slider__item">
-        <div class="offer__content">
-          <h2 class="offer__title">Аgdgdg<br> Liebherr для любых задач</h2>
-          <p class="offer__text">Мобильные, гусеничные и башенные краны<br> LIEBHERR в аренду для любых задач и
-            грузов.<br>
-            работаем по всей России
-          </p>
-          <a class="offer__btn btn" href="#">Заказать звонок</a>
-          <a class="offer__btn btn" href="#">Каталог техники</a>
-        </div>
-      </div>
-      <div class="offer__slider-btn slider__btn">
-        <button class="slider__btn-prew btn" type="button"></button>
-        <button class="slider__btn-next btn" type="button"></button>
+        </li>
+        <li class="offer__container offer__slider__item">
+          <div class="offer__overlay">
+            <div class="offer__content">
+              <h2 class="offer__title">Аренда спецтехники<br> Liebherr для любых задач</h2>
+              <p class="offer__text">Мобильные, гусеничные и башенные краны<br> LIEBHERR в аренду для любых задач и
+                грузов.<br>
+                работаем по всей России
+              </p>
+              <a class="offer__btn btn" href="#">Заказать звонок</a>
+              <a class="offer__btn btn btn--transparent" href="#">Каталог техники</a>
+            </div>
+          </div>
+        </li>
+        <li class="offer__container offer__slider__item">
+          <div class="offer__overlay">
+            <div class="offer__content">
+              <h2 class="offer__title">Аренда спецтехники<br> Liebherr для любых задач</h2>
+              <p class="offer__text">Мобильные, гусеничные и башенные краны<br> LIEBHERR в аренду для любых задач и
+                грузов.<br>
+                работаем по всей России
+              </p>
+              <a class="offer__btn btn" href="#">Заказать звонок</a>
+              <a class="offer__btn btn btn--transparent" href="#">Каталог техники</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="offer__slider-btn">
+        <button class="offer__slider-btn--prew btn" type="button" disabled></button>
+        <button class="offer__slider-btn--next btn" type="button"></button>
       </div>
     </section>
 
@@ -161,35 +169,13 @@
       <div class="catalog__top container">
         <h2 class="catalog__title title">Каталог техники</h2>
         <div class="catalog__control slider-control">
-          <button class="btn-prew btn"></button>
+          <button class="btn-prew btn" disabled></button>
           <button class="btn-next btn"></button>
         </div>
       </div>
       <div class="catalog__container">
-        <ul class="catalog__list">
-          <li class="catalog__item card">
-            <picture>
-              <source media="(max-width: 425px)" srcset="img/main-catalog/card-mob.png">
-              <source media="(max-width: 768px)" srcset="img/main-catalog/card-tablet.png">
-              <img class="card__img" src="img/main-catalog/card-desctope.png" alt="Гусеничный кран">
-            </picture>
-            <div class="card__container">
-              <h3 class="card__title">Гусеничный кран<br> Liebherr LR 1750</h3>
-              <table class="card__description">
-                <tr>
-                  <td>Грузоподъемность:</td>
-                  <td>40 тонн</td>
-                </tr>
-                <tr>
-                  <td>Длина стрелы:</td>
-                  <td>35 м</td>
-                </tr>
-              </table>
-              <a class="card__link" href="#">Все характеристики</a>
-              <a class="card__btn btn" href="#">Арендовать</a>
-            </div>
-          </li>
-          <li class="catalog__item card">
+        <ul class="catalog__list slider">
+          <li class="catalog__item card slider__item">
             <picture>
               <source media="(max-width: 425px)" srcset="img/main-catalog/card-mob.png">
               <source media="(max-width: 768px)" srcset="img/main-catalog/card-tablet.png">
@@ -211,7 +197,7 @@
               <a class="card__btn btn" href="#order">Арендовать</a>
             </div>
           </li>
-          <li class="catalog__item card">
+          <li class="catalog__item card slider__item">
             <picture>
               <source media="(max-width: 425px)" srcset="img/main-catalog/card-mob.png">
               <source media="(max-width: 768px)" srcset="img/main-catalog/card-tablet.png">
@@ -233,7 +219,7 @@
               <a class="card__btn btn" href="#order">Арендовать</a>
             </div>
           </li>
-          <li class="catalog__item card">
+          <li class="catalog__item card slider__item">
             <picture>
               <source media="(max-width: 425px)" srcset="img/main-catalog/card-mob.png">
               <source media="(max-width: 768px)" srcset="img/main-catalog/card-tablet.png">
@@ -255,7 +241,7 @@
               <a class="card__btn btn" href="#order">Арендовать</a>
             </div>
           </li>
-          <li class="catalog__item card">
+          <li class="catalog__item card slider__item">
             <picture>
               <source media="(max-width: 425px)" srcset="img/main-catalog/card-mob.png">
               <source media="(max-width: 768px)" srcset="img/main-catalog/card-tablet.png">
@@ -277,7 +263,51 @@
               <a class="card__btn btn" href="#order">Арендовать</a>
             </div>
           </li>
-          <li class="catalog__item card">
+          <li class="catalog__item card slider__item">
+            <picture>
+              <source media="(max-width: 425px)" srcset="img/main-catalog/card-mob.png">
+              <source media="(max-width: 768px)" srcset="img/main-catalog/card-tablet.png">
+              <img class="card__img" src="img/main-catalog/card-desctope.png" alt="Гусеничный кран">
+            </picture>
+            <div class="card__container">
+              <h3 class="card__title">Гусеничный кран<br> Liebherr LR 1750</h3>
+              <table class="card__description">
+                <tr>
+                  <td>Грузоподъемность:</td>
+                  <td>40 тонн</td>
+                </tr>
+                <tr>
+                  <td>Длина стрелы:</td>
+                  <td>35 м</td>
+                </tr>
+              </table>
+              <a class="card__link" href="#">Все характеристики</a>
+              <a class="card__btn btn" href="#order">Арендовать</a>
+            </div>
+          </li>
+          <li class="catalog__item card slider__item">
+            <picture>
+              <source media="(max-width: 425px)" srcset="img/main-catalog/card-mob.png">
+              <source media="(max-width: 768px)" srcset="img/main-catalog/card-tablet.png">
+              <img class="card__img" src="img/main-catalog/card-desctope.png" alt="Гусеничный кран">
+            </picture>
+            <div class="card__container">
+              <h3 class="card__title">Гусеничный кран<br> Liebherr LR 1750</h3>
+              <table class="card__description">
+                <tr>
+                  <td>Грузоподъемность:</td>
+                  <td>40 тонн</td>
+                </tr>
+                <tr>
+                  <td>Длина стрелы:</td>
+                  <td>35 м</td>
+                </tr>
+              </table>
+              <a class="card__link" href="#">Все характеристики</a>
+              <a class="card__btn btn" href="#order">Арендовать</a>
+            </div>
+          </li>
+          <li class="catalog__item card slider__item">
             <picture>
               <source media="(max-width: 425px)" srcset="img/main-catalog/card-mob.png">
               <source media="(max-width: 768px)" srcset="img/main-catalog/card-tablet.png">
@@ -589,6 +619,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/slider-offer.js"></script>
   <script src="js/script.js"></script>
 </body>
 

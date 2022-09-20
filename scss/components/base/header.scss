@@ -69,8 +69,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.header__menu-btn,
-.header__menu-overlay {
+.header__menu-btn {
   display: none;
 }
 .header__nav {
@@ -146,14 +145,51 @@
     }
   }
   .header__nav {
-    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 55%;
+    left: -100%;
+
+    width: 50%;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.3s ease 0s;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+  }
+  .header__nav.--active {
+    left: 0;
+  }
+  .header__list {
+    flex-direction: column;
+    align-items: end;
+    gap: 30px;
+  }
+  .header__link {
+    width: 300px;
+    height: 70px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    background-color: $yellow;
+    &:hover,
+    &:active{
+      background-color: $orange;
+    }
   }
   .header__menu-btn {
     position: relative;
+    z-index: 3;
+    //left: 0;
 
     display: block;
     width: 60px;
     height: 40px;
+    transition: all 0.3s linear 0s;
     &::before,
     &::after,
     & span {
@@ -175,13 +211,15 @@
     }
     & span {
       top: 50%;
-      transform: scale(1) translateY(-50%);
+      transform: scale(1);
     }
     &::after {
       top: 100%;
     }
   }
   .header__menu-btn.--active {
+    //left: 100%;
+    //transform: translateX(-100%);
     &::before {
       top: 50%;
       transform: rotate(45deg);
@@ -194,6 +232,20 @@
       transform: rotate(-45deg);
     }
   }
+  .header__menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    sbackground-color: rgba(255, 208, 0, 0.753);
+  }
+  .header__menu-overlay.--active {
+    display: block;
+  }
+
   .header__search {
     margin: 22px 0;
   }
@@ -213,6 +265,10 @@
   .header__adress {
     display: none;
   }
+
+  .header__nav {
+    width: 60%;
+  }
 }
 
 @media (max-width: 570px) {
@@ -227,13 +283,33 @@
     margin: 0 auto;
     margin-bottom: 30px;
   }
+  .header__nav {
+    width: 100%;
+    border-radius: 0;
+  }
+  .header__list {
+    //align-items: center;
+  }
 }
 
 @media (max-width: 425px) {
   .header__search {
     & input {
       width: 130px;
+      &::placeholder {
+        opacity: 0;
+      }
     }
+  }
+  .header__nav {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+  .header__list {
+    gap: 15px;
+  }
+  .header__link {
+    width: 250px;
   }
 }
 

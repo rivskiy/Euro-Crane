@@ -61,6 +61,9 @@ button {
 
   background-color: $white;
 }
+.page__body.--lock {
+  overflow: hidden;
+}
 
 .container{
   max-width: 1200px;
@@ -84,6 +87,11 @@ button {
     margin: 0 auto;
   }
 }
+.flex-list {
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+}
 
 @media (max-width: 860px) {
   .grid-list {
@@ -91,8 +99,27 @@ button {
   }
 }
 
+@media (max-width: 768px) {
+  .flex-list__item {
+    display: none;
+    &:first-child {
+      display: block;
+    }
+    &:nth-child(2) {
+      display: block;
+    }
+  }
+}
+
 @media (max-width: 570px) {
   .grid-list {
     grid-template-columns: 1fr;
+  }
+  .flex-list {
+    flex-direction: column;
+    & img {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }

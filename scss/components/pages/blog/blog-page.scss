@@ -1,0 +1,73 @@
+.article-rent {
+}
+.visually-hidden {
+}
+.article-rent__article {
+}
+.article-rent__title {
+}
+.title {
+}
+.article-rent__text {
+}
+
+.article-rent__images {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.article-rent__list {
+}
+.article-advantages {
+}
+.article-advantages__title {
+}
+.article-advantages__text {
+}
+.article-advantages__list {
+}
+.article-more {
+}
+.article-more__title {
+}
+.article-more__control {
+}
+.slider-control {
+}
+.btn-prew {
+}
+.btn {
+}
+.btn-next {
+}
+.blog__list {
+}
+.blog__item {
+}
+.blog-card {
+}
+.blog-card__container {
+}
+.blog-card__title {
+}
+.blog-card__description {
+}
+.blog-card__btn {
+}
+.article-more__btn {
+ display: none;
+}
+@media (max-width: 860px) {
+  .article-more__control {
+    display: none;
+  }
+  .article-rent__images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .article-more__btn {
+    display: flex;
+    margin: 0 auto;
+  }
+}
